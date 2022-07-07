@@ -12,13 +12,15 @@
     background-size: cover;
     box-sizing: border-box;
     position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 header
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 2em;
+    padding: 2em 0em;
 }
 .logo
 {
@@ -28,9 +30,10 @@ header
 nav ul
 {
    /* flex: 1; */
-   background-color: #242b5f;
+   background-color: #232d60;
+   /* background-color: #242b5f; */
    border-radius: 10px;
-   padding: 0.6em 0em;
+   padding: 0.5em 0em;
 }
 nav ul li 
 {
@@ -40,7 +43,8 @@ nav ul li
 nav ul li a
 {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
     color: white;
     padding: 0.4em 1em;
     border-radius: 10px;
@@ -48,10 +52,12 @@ nav ul li a
 nav ul li a:hover
 {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Neucha', cursive;
+    font-size: 20px;
     color: #242b5f;
-    padding: 0.2em 1em;
+    padding: 0.1em 1em;
     border-radius: 10px;
+    /* background: linear-gradient(45deg ,#87adfe,#ebc3e3); */
     background-color: #ebc3e3;
 }
 .cart
@@ -59,11 +65,44 @@ nav ul li a:hover
     width: 2.5em;
     cursor: pointer;
 }
-nav ul li
+
+
+/* Here we are styling the main page content */
+.content
 {
-    
+    margin-left: 10%;
+    margin-top: 10%;
 }
-nav ul li a
+.content h1
 {
+    font-size : 60px;
+    font-weight: 1000;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p
+{
+    font-size :25px;
+    font-family: 'Neucha', cursive;
+    /* font-family: sans-serif; */
+    color: #6a7199;
+}
+.content a
+{
+    font-size : 20px;
+    font-family: 'Neucha', cursive;
+    background: linear-gradient(45deg , #87adfe,#ff77cd);
+    border-radius: 10px;
+    padding: 0.3em 0.4em;
     text-decoration: none;
+    color: white;   
+    text-shadow: #ff77cd;
+}
+.model_img
+{
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
 }
