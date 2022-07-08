@@ -12,8 +12,7 @@
     background-size: cover;
     box-sizing: border-box;
     position: relative;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0% 5%;
     max-width: 1920px;
 }
 header
@@ -21,32 +20,31 @@ header
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5em 0em;
+    padding-top: 2em;
+    /* padding: 1.5em 0em; */
 }
 .logo
 {
-    width: 7em;
+    width: 10em;
     cursor: pointer;
 }
 nav ul
 {
-   /* flex: 1; */
    background-color: #232d60;
-   /* background-color: #242b5f; */
    border-radius: 10px;
-   padding: 0.8em 0em;
-   display: none;
+   padding: 0.5em 0em;
+   display: block;
 }
 nav ul li 
 {
     display: inline;
-    margin: 0em 0.35em;
+    margin: 0em 0.4em;
 }
 nav ul li a
 {
     text-decoration: none;
     font-family: 'Neucha', cursive;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     padding: 0.4em 1em;
     border-radius: 10px;
@@ -55,7 +53,7 @@ nav ul li a:hover
 {
     text-decoration: none;
     font-family: 'Neucha', cursive;
-    font-size: 18px;
+    font-size: 17px;
     color: #242b5f;
     padding: 0.1em 1em;
     border-radius: 10px;
@@ -63,7 +61,7 @@ nav ul li a:hover
 }
 .hamburger
 {
-    display: block;
+    display: none;
     position: relative;
     z-index: 1;
     user-select: none;
@@ -103,14 +101,13 @@ nav ul li a:hover
 /* Here we are styling the main page content */
 .content
 {
-    margin-left: 8%;
-    margin-top: 15%;
-    margin-right: 8%;
+    margin-left: 12%;
+    margin-top: 12%;
     display: inline-block;
 }
 .content h1
 {
-    font-size : 30px;
+    font-size : 70px;
     font-weight: 1000;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -118,9 +115,8 @@ nav ul li a:hover
 }
 .content p
 {
-    font-size :20px;
+    font-size :24px;
     font-family: 'Neucha', cursive;
-    /* font-family: sans-serif; */
     color: #6a7199;
 }
 .content a
@@ -136,7 +132,7 @@ nav ul li a:hover
 }
 .model_img
 {
-    height: 70%;
+    height: 85%;
     position: absolute;
     bottom: 0;
     right: 20px;
@@ -145,8 +141,20 @@ nav ul li a:hover
 
 /* Here is the code for the media queries */
 
-@media only screen and (min-width: 320px)  and (max-width:767px)
+  @media only screen and (min-width: 320px)  and (max-width:767px)
 {
+
+     .logo
+   {
+    width: 6em;
+    cursor: pointer;
+   }
+    .cart
+   {
+    width: 1.6em;
+    cursor: pointer;
+   }
+
     nav ul
   {
    background-color: #232d60;
@@ -168,9 +176,28 @@ nav ul li a:hover
       cursor: pointer;
   }
 
+     .content
+   {
+    margin-left: 10%;
+    margin-top: 30%;
+    display: inline-block;
+   }
+
+     .content a
+  {
+    font-size : 15px;
+    font-family: 'Neucha', cursive;
+    background: linear-gradient(45deg , #87adfe,#ff77cd);
+    border-radius: 10px;
+    padding: 0.3em 0.4em;
+    text-decoration: none;
+    color: white;   
+    text-shadow: #ff77cd;
+  }
+
     .content h1
   {
-    font-size : 32px;
+    font-size : 30px;
     font-weight: 1000;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -179,14 +206,14 @@ nav ul li a:hover
 
    .content p
   {
-    font-size :20px;
+    font-size :15px;
     font-family: 'Neucha', cursive;
     color: #6a7199;
   }
 
   .model_img
   {
-    height: 45%;
+    height: 42%;
     position: absolute;
     bottom: 0;
     right: 20px;
@@ -194,8 +221,19 @@ nav ul li a:hover
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width:1799px)
+
+@media only screen and (min-width: 768px) and (max-width:1280px)
 {
+  .logo
+  {
+   width: 5.5em;
+   cursor: pointer;
+  }
+   .cart
+  {
+   width: 1.6em;
+   cursor: pointer;
+  }
     nav ul
   {
    background-color: #232d60;
@@ -203,6 +241,11 @@ nav ul li a:hover
    padding: 0.5em 0em;
    display: block;
   }
+    nav ul li 
+   {
+    display: inline;
+    margin: 0em 0.2em;
+   }
 
   .hamburger
   {
@@ -216,7 +259,13 @@ nav ul li a:hover
       background: none;
       cursor: pointer;
   }
-
+  
+  .content
+  {
+   margin-left: 10%;
+   margin-top: 15%;
+   display: inline-block;
+  }
     .content h1
   {
     font-size : 70px;
@@ -241,90 +290,94 @@ nav ul li a:hover
     right: 20px;
     
   }
-}
+} 
 
-
-@media only screen and (min-width: 1800px) and (max-width: 1px)
+ @media only screen and (min-width: 1281px) and (max-width:1750px)
 {
-   .logo
-   {
-    width: 10em;
-    cursor: pointer;
-   }
+  .logo
+  {
+   width: 10em;
+   cursor: pointer;
+  }
+   .cart
+  {
+   width: 2em;
+   cursor: pointer;
+  }
     nav ul
   {
    background-color: #232d60;
    border-radius: 10px;
-   padding: 1em 0em;
+   padding: 0.5em 0em;
    display: block;
   }
-  nav ul li a
-  {
+    nav ul li 
+   {
+    display: inline;
+    margin: 0em 0.2em;
+   }
+
+   nav ul li a
+   {
     text-decoration: none;
     font-family: 'Neucha', cursive;
-    font-size: 26px;
+    font-size: 17px;
     color: white;
     padding: 0.4em 1em;
     border-radius: 10px;
-  }
-  nav ul li a:hover
-  {
+   }
+     nav ul li a:hover
+   {
     text-decoration: none;
     font-family: 'Neucha', cursive;
-    font-size: 26px;
+    font-size: 17px;
     color: #242b5f;
     padding: 0.1em 1em;
     border-radius: 10px;
     background-color: #ebc3e3;
-  }
+   }
 
+  .hamburger
+  {
+      display: none;
+      position: relative;
+      z-index: 1;
+      user-select: none;
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+  }
+  
   .content
- {
-    margin-left: 10%;
-    margin-top: 15%;
-    margin-right: 8%;
-    display: inline-block;
- }
- .content a
- {
-   font-size : 28px;
-   font-family: 'Neucha', cursive;
-   background: linear-gradient(45deg , #87adfe,#ff77cd);
-   border-radius: 10px;
-   padding: 0.4em 0.5em;
-   text-decoration: none;
-   color: white;   
-   text-shadow: #ff77cd;
- }
- .content h1
- {
-   font-size : 75px;
-   font-weight: 1000;
-   margin-top: 22px;
-   margin-bottom: 10px;
-   color: #232d60;
- }
+  {
+   margin-left: 10%;
+   margin-top: 15%;
+   display: inline-block;
+  }
+    .content h1
+  {
+    font-size : 70px;
+    font-weight: 1000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #232d60;
+  }
 
    .content p
   {
-    font-size :35px;
+    font-size :25px;
     font-family: 'Neucha', cursive;
     color: #6a7199;
-  } 
-
-  .cart
-  {
-    width: 3em;
-    cursor: pointer;
   }
 
   .model_img
   {
-    height: 75%;
+    height: 80%;
     position: absolute;
     bottom: 0;
     right: 20px;
     
   }
-} 
-
+}  
