@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name = "author" content = "Yuvraj Singh">
     <title>Shopping Website</title>
     
     <!-- Here we will link the css stylesheet -->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="collections.css">
 
     <!-- Here we are adding link to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +24,23 @@
             <img src="Images/logo.png" class = "logo">
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#" class = "isActive">Home</a></li>
                     <li><a href="#">Collection</a></li>
+                    <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Account</a></li>
                 </ul>
             </nav>
+            <button class="hamburger is-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <img src="Images/cart_image.png" class ="cart">
         </header>
+
+
+
 
         <div class="content">
             <a href="#">2022 Collections</a>
@@ -42,6 +51,40 @@
         <img src="Images/model.png" class="model_img">
 
     </div>
+
+    
+    <!-- Now we will make the collection page -->
+    <div class="collections">
+        <div class="text">
+        <h2>2022 Collections</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis amet sunt natus, molestiae laborum.</p>
+        </div>
+
+        <div class="sections">
+
+         <div class="category1">
+            <img src="IMAGES/Category 1.jpg">
+            <p>Get all men shirts , <br>t-shirts and hoodies</p>
+            <button>Men's Wear</button>
+         </div>
+
+         <div class="category2">
+            <img src="IMAGES/Category 2.jpg">
+            <p>Get all men shirts ,<br>t-shirts and hoodies</p>
+            <button>Footwear</button>
+         </div>
+
+         <div class="category3">
+            <img src="IMAGES/Category 1.jpg">
+            <p>Get all men shirts , <br>t-shirts and hoodies</p>
+            <button>Watches</button>
+         </div>
+
+        </div>
+    </div>
+
+
+
 
 </body>
 </html>

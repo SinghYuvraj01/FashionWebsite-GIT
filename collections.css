@@ -1,0 +1,90 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.collections
+{
+    background-color: #d4eefc;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.text
+{
+    text-align: center;
+    padding-top: 2%;
+}
+.text h2
+{
+    color: #232d60;
+    font-size: 2.5em;
+}
+.text p
+{
+    font-size :20px;
+    font-family: 'Neucha', cursive;
+    padding: 0.5em;
+    color: #6a7199;
+}
+.sections
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.category1
+{
+    border-radius: 10px;
+    padding: 1.5em 2em;
+    background-color: #ebc3e3;
+    /* margin-left: 5%; */
+}
+.category2
+{
+    border-radius: 10px;
+    padding: 1.5em 2em;
+    background-color: #ebc3e3;
+    
+}
+.category3
+{
+    border-radius: 10px;
+    padding: 1.5em 2em;
+    background-color: #ebc3e3;
+}
+.sections img
+{
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.sections p
+{
+    /* color: #ebc3e3; 
+    color: white; */
+    font-family: sans-serif;
+    color: #d4eefc;
+    text-align: center;
+    padding: 0.4em 0em;
+    border-radius: 10px;
+    background-color: #232d60;
+
+}
+.sections button
+{
+    margin-top: 1em;
+    font-family: 'Neucha', cursive;
+    background: linear-gradient(45deg , #87adfe,#ff77cd);
+    border: none;
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
